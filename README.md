@@ -17,7 +17,7 @@
 Чек-аутнуть нужную ветку. Ветки созданы в формате lab<b><u><i>n</b></u> (n - номер лабораторной)
 
 ```
-git checkout yyyy.mm.dd
+git checkout labn
 ```
 
 Сделать Pull
