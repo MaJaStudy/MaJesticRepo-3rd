@@ -1,3 +1,7 @@
+<?php
+    namespace App\Models;
+    use App\Models\{User, Product, Order};
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,14 +17,17 @@
 Composer - это менеджер зависимостей для PHP, который управляет библиотеками и их версиями в проекте.
 -->
         <?php
-            class Product {
-                public function __construct(
-                    public string $name,
-                    public float $price
-                ) {}
-            }
-            $p = new Product("Молоко", 65.5);
-            echo $p->name . " " . $p->price
+        require_once __DIR__ . '/../vendor/autoload.php';
+
+        $user = new User("Виктор Пахомов", "majastudy@github.com");
+        $laptop = new Product("Laptop", 999.99);
+        $phone = new Product("Phone", 599.99);
+        $order = new Order(24, ($laptop->price)+($phone->price));
+
+        echo $user->getInfo() . "<br>";
+        echo $laptop->getInfo() . "<br>";
+        echo $phone->getInfo() . "<br>";
+        echo $order->getInfo() . "<br>";
         ?>
     </main>
 </body>

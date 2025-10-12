@@ -1,0 +1,15 @@
+{
+    "name": "majan/src",
+    "autoload": {
+        "psr-4": {
+            "Majan\\Src\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "MaJaStudy",
+            "email": "214187884+MaJaStudy@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

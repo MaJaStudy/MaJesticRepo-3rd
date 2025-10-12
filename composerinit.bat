@@ -1,2 +1,2 @@
-cd src
 composer init
+composer dump-autoload

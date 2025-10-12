@@ -1,3 +1,6 @@
+<?php
+    namespace App\Models;
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -18,9 +21,11 @@ Composer - это менеджер зависимостей для PHP, кото
                     public string $name,
                     public float $price
                 ) {}
+                
+                public function getInfo(): string {
+                    return "Товар: {$this->name}, Цена: \${$this->price}";
+                }
             }
-            $p = new Product("Молоко", 65.5);
-            echo $p->name . " " . $p->price
         ?>
     </main>
 </body>
