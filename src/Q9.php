@@ -17,7 +17,7 @@
                 ) {}
 
                 public function getInfo(): string {
-                return "Имя: {$this->name}, eMail: {$this->email}";
+                return "Пользователь: {$this->name}, eMail: {$this->email}";
             }
             }
             $u = new User("Виктор Пахомов", "majastudy@github.com");
