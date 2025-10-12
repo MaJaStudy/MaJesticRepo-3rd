@@ -17,7 +17,7 @@
                 ) {}
             }
             $p = new Product("Молоко", 65.5);
-            echo $p->name . " " . $p->price
+            echo "Товар: {$p->name}, Цена: {$p->price} руб.";
         ?>
     </main>
 </body>
